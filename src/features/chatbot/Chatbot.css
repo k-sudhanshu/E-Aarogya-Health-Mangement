@@ -1,0 +1,62 @@
+/* Chatbot.css */
+
+/* Chat Container */
+.chat-container {
+  @apply fixed right-5 bottom-5 w-96 h-96 bg-white rounded-lg shadow-lg flex flex-col;
+}
+
+/* Chat Header */
+.chat-header {
+  @apply bg-blue-600 text-white p-3 flex justify-between items-center rounded-t-lg;
+}
+
+/* Close Button */
+.close-button {
+  @apply bg-transparent border-none text-white text-lg cursor-pointer;
+}
+
+/* Messages Area */
+.chat-messages {
+  @apply flex-grow overflow-y-auto p-3;
+}
+
+/* Message Styles */
+.message {
+  @apply my-2 p-3 rounded-lg max-w-[80%];
+}
+
+.message.user {
+  @apply bg-blue-100 text-right self-end;
+}
+
+.message.bot {
+  @apply bg-gray-200 text-left self-start;
+}
+
+/* Input Container */
+.input-container {
+  @apply flex p-4 bg-gray-100 border-t border-gray-300;
+}
+
+/* Input Field */
+.input-field {
+  @apply flex-grow p-2 border border-gray-300 rounded-md outline-none;
+}
+
+/* Send Button */
+.send-button {
+  @apply ml-3 p-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-200 cursor-pointer;
+}
+
+/* Chat Button */
+.chat-button {
+  @apply fixed right-5 bottom-3 bg-blue-600 text-white rounded-full p-3 hover:bg-blue-700 transition duration-200;
+}
+
+.chat-button.active {
+  @apply bottom-[25.5rem]; /* Adjust position when active */
+}
+
+.icon {
+  @apply text-3xl; /* Icon size */
+}
